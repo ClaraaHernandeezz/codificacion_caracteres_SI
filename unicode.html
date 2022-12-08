@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <body>
+        <header>
+            <section class="titulo">
+                <h1>Codificación de caracteres en ficheros de texto</h1>
+                <h2>UNICODE y sus distintas codificaciones</h2>
+            </section>
+            
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">ASCII</a>
+                <a href="#">ISO-8859</a>
+                <a href="#">Unicode</a>
+            </nav>
+        </header>
+        
+        <section id="principal-unicode">
+            <h3>
+                UNICODE y sus distintas codificaciones
+            </h3>
+            <p id="texto-unicode">
+                Unicode es un set de caracteres universal. Es un estándar en el que se definen los caracteres necesarios para la escritura de la gran mayoría de idiomas hablados actualmente que se usan en la computadora. Trata de ser un superconjunto de todos los sets de caracteres que se han codificado. <br>
+                Unicode proporciona un único y extenso set de caracteres que trata de incluir todos los caracteres necesarios para cualquiera de los sistemas de escritura del mundo, incluyendo sistemas ancestrales tales como el cuneiforme, el gótico o los jeroglíficos egipcios. <br>
+                Es fundamental para la arquitectura de la Web y de los sistemas operativos. Las propiedades y algoritmos necesarios para trabajar con caracteres también son descritos en el Estándar Unicode. <br>    
+                Se considera que las primeras 65.536 ubicaciones de puntos de código en el set de caracteres Unicode constituyen el Plano plurilingüe básico (Basic Multilingual Plane, BMP). El BMP incluye la mayoría de los caracteres utilizados más frecuentemente. 
+            </p>
+            <div id="curiosidad-unicode">
+                <p>El número 65.536 es 2 elevado a la 16. En otras palabras, la cantidad máxima de combinaciones de bits que se pueden obtener en dos bytes.</p>
+            </div>
+            <p id="texto2-unicode">
+                El set de caracteres Unicode contiene aproximadamente un millón de ubicaciones de puntos de código adicionales. Se denominan caracteres complementarios. <br>
+                Los formatos de codificación que se pueden usar con Unicode se denominan UTF-8, UTF-16 y UTF-32.
+            </p>
+            <ul>
+                <li><a href="#">UTF-8</a>: utiliza 1 byte para representar caracteres en el set ASCII, dos bytes para caracteres en otros bloques alfabéticos y tres bytes para el resto del BMP. Para los caracteres complementarios se utilizan 4 bytes. Los primeros 128 caracteres coinciden con ASCII, por lo que son compatibles.</li>
+                <li><a href="#">UTF-16</a>: utiliza 2 bytes para cualquier carácter en el BMP y 4 bytes para los caracteres complementarios.</li>
+                <li><a href="#">UTF-32</a>: emplea 4 bytes para todos los caracteres.</li>
+            </ul>
+            <div id="curiosidad2-unicode">
+                <p>UTF son las siglas, en inglés de Unicode Transformation Format.</p>
+            </div>
+            <p id="texto3-unicode">
+                Una de las mayores ventajas de Unicode es que ofrece un mismo valor numérico para cada uno de los caracteres, de forma independiente del hardware, del software y del idioma que se estén utilizando. Esto permite que programas y sitios web se adapten fácilmente a diferentes contextos de uso de forma sencilla y que los datos puedan compartirse entre sistemas diferentes sin verse alterados.<br>
+                Hoy en día, Unicode ha sido asumida por la mayoría de las empresas líderes de la industria informática (como Microsoft, Apple, Oracle, IBM, etc.) y por casi todos los estándares actuales (como LDAP, XML, Java, etc).
+            </p>
+        </section>
+
+        <div id="imagen-unicode">
+            <img id="#" alt="Foto de …" src="#">
+        </div>
+
+        <section id="menu-unicode">
+            <ul>Formatos de codificación de unicode:
+                <li><a href="#">UTF-8</a></li>
+                <li><a href="#">UTF-16</a></li>
+                <li><a href="#">UTF-32</a></li>
+            </ul>
+        </section>
+    </body>
+</html>
